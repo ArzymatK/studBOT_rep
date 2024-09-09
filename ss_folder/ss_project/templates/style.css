@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@font-face {
+    font-family: "LR";
+    src: url("./fonts/Lobster-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MW";
+    src: url("./fonts/Merriweather-Light.ttf") format("truetype");
+}
+body{
+   /* max-width: 1 200px; */
+   background-color: #465779;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    background-color: #0D2F59;
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.novigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "MW";
+    font-size: 25px;
+    cursor: pointer;
+    list-style-type: none;
+    color: #d3d7e7;
+    gap: 120px;
+    padding: 0px 35px 0px 0px ;
+}
+
+.navbar h3{
+    font-family: "MW";
+    color: #d3d7e7;
+    font-size: 50px;
+    padding: 0px 0px 0px 35px;
+}
+.menu{
+    text-decoration: none;
+    color: #d3d7e7;
+}       
+.hero{
+    padding: 0px 30px 0px 30px;
+}
+.hero .wrapper{
+    max-width: 1200px;
+    height: 800px;
+    display: flex;
+
+}
+.wrapper_left{
+    width: 600px;
+}
+.wrapper_left img:first-child{
+    width: 230px;
+    height: 230px;
+    margin: 55px 0px 0px 130px;
+    border-radius: 50%;
+}
+
+.wrapper_right{
+    width: 600px;
+}
+.wrapper_right img{
+    width: 600px;
+    height: 750px;
+    padding: 50px 0px 0px 0px;
+}
+.wrapper_left h1{
+   font-family: "MW";
+   font-size: 40px;
+   color: #d3d7e7;
+   padding: 0px 0px 0px 50px;
+}
+.main-info{
+    font-family: "MW";
+    font-size: 22px;
+    color: #d3d7e7;
+    width: 480px;
+    height: 80px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+.About-Myself{
+    padding: 0px 30px 0px 30px;
+    position: relative;
+}
+.About-Myself h2{
+   font-family: "MW";
+   font-size: 40px;
+   color: #d3d7e7;
+   padding: 40px 350px 30px 450px;
+}
+.About-Myself img{
+   width: 100%;
+   height: 600px;
+}
+.About-Myself h3{
+    font-size: 38px;
+    font-family: "LR";
+    width: 60%;
+    color: #d3d7e7;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.hobbies h2{
+    font-family: "MW";
+    font-size: 40px;
+    color: #d3d7e7;
+    padding: 20px 300px 30px 500px;
+}
+.main-part{
+    display: flex;
+    justify-content: space-evenly;
+}
+.part_4 img{
+    width: 150px;
+    height: 125px;  
+}
+.hobbies_title{
+    font-size: 20px;
+    font-family: "MW";
+    width: 200px;
+    text-align: center;
+    color: #d3d7e7;
+    background-color: #161515;
+}
+.hobbies_image{
+    padding: 0px 0px 0px 30px;
+}
+.Contact{
+    background-color: #0D2F59;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.trapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 100px;
+}
+.active-btn{
+  width: 200px;
+  height: 60px;
+  background-color: #465779;
+  border-radius: 35px;
+  cursor: pointer;
+  padding: 0px 0px 0px 50px;
+  color: #d3d7e7;
+  font-family: "MW";
+  position: relative;
+}
+.social{
+    display: flex;
+    max-width: 1200px;
+    padding: 0px 0px 0px 350px;
+    gap: 100px;
+    cursor: pointer;
+}
+.ring{
+  position: absolute;
+  padding: 0px 0px 0px 12px
+}

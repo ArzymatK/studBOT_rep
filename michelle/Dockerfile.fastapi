@@ -1,0 +1,22 @@
+# Используем базовый образ Python
+FROM python:3.10-slim
+
+# Установка переменных среды для Django
+ENV PYTHONUNBUFFERED=1 \
+    DJANGO_SETTINGS_MODULE=michelle.settings
+
+# Создание и переход в рабочий каталог приложения Django
+WORKDIR /app
+
+# Копирование requirements.txt и установка зависимостей
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копирование проекта Django в образ
+COPY . /app/
+
+# Сборка статических файлов
+RUN python manage.py collectstatic --noinput
+
+# Определение команды для запуска Django
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "michelle.wsgi:application"]
